@@ -553,3 +553,8 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.bg-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 28 20 / var(--tw-bg-opacity, 1));
+}
