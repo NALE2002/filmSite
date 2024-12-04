@@ -554,6 +554,18 @@ video {
   display: none;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .bg-main {
   --tw-bg-opacity: 1;
   background-color: rgb(24 28 20 / var(--tw-bg-opacity, 1));

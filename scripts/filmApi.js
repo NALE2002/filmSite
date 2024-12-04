@@ -9,5 +9,22 @@ const options = {
 
 fetch(url, options)
   .then(res => res.json())
-  .then(json => console.log(json))
+  // .then(json => console.log(json))
+
+  .then(data => {
+    const moviesContainer = document.getElementById("movies");
+    moviesContainer.innerHTML = data.results
+
+    .map(movie => 
+        ` <div class="text-center"> 
+          <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" />
+          <h3>${movie.title}</h3>
+          <p>rating: ${movie.vote_average}</p>
+        </div> `
+    )
+
+    .join('');
+
+  })
+
   .catch(err => console.error(err));
