@@ -17,9 +17,8 @@ fetch(url, options)
 
     .map(movie => 
         ` <div class="text-center"> 
-          <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" />
-          <h3>${movie.title}</h3>
-          <p>rating: ${movie.vote_average}</p>
+          <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" class="rounded-lg"/>
+          
         </div> `
     )
 

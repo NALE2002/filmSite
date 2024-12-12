@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html class="text-white">
 
 <head>
 
@@ -13,17 +13,43 @@
 
 </head>
 
-<body class="bg-main">
-    <div id="movies" class="grid grid-cols-4 gap-5">
+<body class="flex flex-col bg-main">
 
-    </div>
+    <header class="mx-[4%] my-[1%]">
+        <nav class="flex flex-row">
+            <div class="flex justify-start">
+                <img src="./img/logo-test.svg" alt="logo-test" class="w-40 h-20">
+            </div>
 
+            <div class="flex self-center ml-auto gap-4">
+                <a href="">
+                    <div class="flex flex-col items-center justify-center bg-secondario h-10 p-5 rounded-3xl text-base font-semibold text-gray-100 hover:bg-secondario-scuro hover:text-gray-200 transition-all duration-300 ease-out">
+                        <p>Registrati</p>
+                    </div>
+                </a>
 
+                <a href="">
+                    <div class="flex flex-col items-center justify-center bg-secondario h-10 p-5 rounded-3xl text-base font-semibold text-gray-100 hover:bg-secondario-scuro hover:text-gray-200 transition-all duration-300 ease-out">
+                        <p>Accedi</p>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        
 
+        <!-- <div id="movies" class="grid grid-cols-5 gap-5">
 
+        </div> -->
+    </main>
 
-    <script src="../scripts/filmApi.js"></script>
+    <footer>
+
+    </footer>
+    
+    <!-- <script src="./scripts/filmApi.js"></script> -->
 </body>
 
 </html>
